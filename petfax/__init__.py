@@ -13,6 +13,9 @@ def create_app():
    from . import facts
    app.register_blueprint(facts.bp)
 
+   from . import new_fact
+   app.register_blueprint(new_fact.bp)
+
    return app
 
 
